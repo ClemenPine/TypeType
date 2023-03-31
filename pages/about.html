@@ -18,8 +18,6 @@
 <body class="bg-light-backdrop dark:bg-dark-backdrop h-screen select-none"
     style="background-image:url('/assets/dark.jpg')">
 
-    <textarea id="input" class="absolute opacity-0"></textarea>
-
     <header class="absolute w-screen">
         <div class="bg-light-box dark:bg-dark-box m-4 px-8 py-4 rounded-xl shadow-md flex justify-between items-center">
             <div>
@@ -42,28 +40,22 @@
     <div class="mx-auto flex flex-col justify-center h-full">
         <div class="flex justify-center">
             <p class="p-6 text-3xl font-medium text-light-first dark:text-dark-first max-w-3xl">
-                <span id="text"></span>
-                <span id="attribution" class="text-light-third dark:text-dark-third float-right pr-6"></span>
+                This is a typing game that I started working on. I plan on adding more features very soon :D
+                <span id="attribution" class="text-light-third dark:text-dark-third float-right pr-6">- ClemenPine</span>
             </p>
-        </div>
-        <div class="flex justify-center">
-            <p class="text-sm text-light-second dark:text-dark-second">Press Escape to start over</p>
         </div>
     </div>
 
-
     <footer class="text-center absolute bottom-0 left-0 w-full h-16 flex px-8 justify-end items-center">
         <div class="flex justify-center gap-4">
-            <a href="pages/about.html"
-                class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">About</a>
+            <a href="/"
+                class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">Home</a>
             <a href="#"
                 class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">Contact</a>
             <a href="https://github.com/ClemenPine/TypeType"
                 class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">GitHub</a>
         </div>
     </footer>
-
-    <div hidden id="caret" class="fixed w-0.5 h-8 rounded-lgill bg-light-first dark:bg-dark-first"></div>
 
 </body>
 
