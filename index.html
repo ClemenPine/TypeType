@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="js/main.js"></script>
+
+    <!-- Third-Party Scripts -->
+    <script src="https://kit.fontawesome.com/7cc1d241a9.js" crossorigin="anonymous"></script>
+    <link href="output.css" rel="stylesheet">
+
+    <title>TypeType</title>
+</head>
+
+<body class="bg-light-backdrop dark:bg-dark-backdrop h-screen select-none"
+    style="background-image:url('assets/dark.jpg')">
+
+    <textarea id="input" class="absolute opacity-0"></textarea>
+
+    <header class="absolute w-screen">
+        <div class="bg-light-box dark:bg-dark-box m-4 px-8 py-4 rounded-xl shadow-md flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-light-second dark:text-dark-second">TypeType</h1>
+            </div>
+            <div class="flex">
+                <button id="theme-toggle" title="Light Mode" onclick="theme()"
+                    class="hover:bg-light-third dark:hover:bg-dark-third transition duration-150 rounded-xl h-12 w-12 flex items-center justify-center">
+                    <i class="fas fa-moon text-light-second dark:text-dark-second"></i>
+                </button>
+                <button title="Settings"
+                    class="hover:bg-light-third dark:hover:bg-dark-third transition duration-150 rounded-xl h-12 w-12 flex items-center justify-center">
+                    <i class="fas fa-cog text-light-second dark:text-dark-second"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="mx-auto flex flex-col justify-center h-full">
+        <div class="flex justify-center">
+            <p class="p-6 text-3xl font-medium text-light-first dark:text-dark-first max-w-3xl">
+                <span id="text"></span>
+                <span id="attribution" class="text-light-third dark:text-dark-third float-right pr-6"></span>
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <p class="text-sm text-light-second dark:text-dark-second">Press Escape to start over</p>
+        </div>
+    </div>
+
+
+    <footer class="text-center absolute bottom-0 left-0 w-full h-16 flex px-8 justify-end items-center">
+        <div class="flex justify-center gap-4">
+            <a href="#"
+                class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">About</a>
+            <a href="#"
+                class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">Contact</a>
+            <a href="#"
+                class="text-light-third dark:text-dark-third hover:text-light-first dark:hover:text-dark-first transition duration-150">GitHub</a>
+        </div>
+    </footer>
+
+    <div hidden id="caret" class="fixed w-0.5 h-8 rounded-lgill bg-light-first dark:bg-dark-first"></div>
+
+</body>
+
+</html>
