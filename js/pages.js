@@ -1,4 +1,4 @@
-window.theme = function() {
+window.theme = function () {
     const toggle = document.getElementById('theme-toggle')
     const icon = toggle.querySelector('i')
 
@@ -12,6 +12,7 @@ window.theme = function() {
         toggle.setAttribute('title', 'Dark Mode')
 
         document.body.style.backgroundImage = "url('/assets/light.jpg')"
+        localStorage.setItem('theme', 'light');
     } else {
         html.classList.add('dark')
 
@@ -20,5 +21,16 @@ window.theme = function() {
         toggle.setAttribute('title', 'Light Mode')
 
         document.body.style.backgroundImage = "url('/assets/dark.jpg')"
+        localStorage.setItem('theme', 'dark');
     }
 }
+
+window.addEventListener('load', function () {
+    const storedTheme = localStorage.getItem('theme')
+
+    if (storedTheme === 'light') {
+        theme(storedTheme)
+    }
+
+    document.body.hidden = false
+})
