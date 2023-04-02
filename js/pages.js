@@ -11,7 +11,7 @@ window.theme = function () {
         icon.classList.add('fa-sun')
         toggle.setAttribute('title', 'Dark Mode')
 
-        document.body.style.backgroundImage = "url('./assets/light.jpg')"
+        document.body.style.backgroundImage = "url('assets/light.jpg')"
         localStorage.setItem('theme', 'light');
     } else {
         html.classList.add('dark')
@@ -20,7 +20,7 @@ window.theme = function () {
         icon.classList.add('fa-moon')
         toggle.setAttribute('title', 'Light Mode')
 
-        document.body.style.backgroundImage = "url('./assets/dark.jpg')"
+        document.body.style.backgroundImage = "url('assets/dark.jpg')"
         localStorage.setItem('theme', 'dark');
     }
 }
